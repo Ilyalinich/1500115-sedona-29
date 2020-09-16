@@ -1,0 +1,297 @@
+/*Fonts*/
+/* pt-sans-regular - latin_cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'),
+       url('C:/Users/master/Documents/GitHub/1500115-sedona-29/fonts/ptsans.woff2') format('woff2'), /* Super Modern Browsers */
+       url('C:/Users/master/Documents/GitHub/1500115-sedona-29/fonts/ptsans.woff') format('woff'); /* Modern Browsers */
+  font-display: swap;
+}
+/* pt-sans-700 - latin_cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'),
+       url('C:/Users/master/Documents/GitHub/1500115-sedona-29/fonts/ptsansbold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('C:/Users/master/Documents/GitHub/1500115-sedona-29/fonts/ptsansbold.woff2') format('woff'); /* Modern Browsers */
+  font-display: swap;
+}
+
+/*Variables*/
+
+:root {
+
+  --basic-extra-black: #000000;
+  --basic-extra-black-alfa: rgba(0, 0, 0, 0.3);
+  --basic-hard-black: #231F20;
+  --basic-black: #333333;
+  --basic-extra-brown: #503E33;
+  --basic-hard-brown: #604E43;
+  --basic-brown: #766357;
+  --basic-extra-blue: #5496BD;
+  --basic-hard-blue: #669EC0;
+  --basic-blue: #81B3D2;
+  --basic-hard-grey: #BDBBBC;
+  --basic-grey: #EEEEEE;
+  --basic-lite-grey: #F2F2F2;
+  --basic-white-alfa: rgba(255, 255, 255, 0.9);
+  --basic-white-soft-alfa: rgba(255, 255, 255, 0.3);
+  --basic-white: #FFFFFF;
+
+  --special: #888888;
+}
+
+/*Global*/
+
+body {
+  min-width: 1200px;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  background-color: var(--basic-white);
+  background-image: url();
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*Main navigation*/
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+  color: var(--basic-extra-black);
+  background-color: transparent;
+}
+
+.main-navigation-wrapper {
+  background-color: var(--basic-white);
+}
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-white);
+}
+
+.site-navigation a {
+  color: var(--basic-extra-black);
+}
+
+.site-navigation a:hover {
+  color: var(--basic-blue);
+}
+
+.site-navigation a:focus {
+  color: var(--basic-extra-black-alfa);
+}
+
+/* Features */
+
+.features {
+  text-align: center;
+}
+
+.features-visual-title {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--basic-extra-black);
+}
+
+.features-list {
+  list-style: none;
+}
+
+.feature-item h3 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+}
+
+.feature-main-city,
+.feature-main-bridge {
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.feature-main-city::after {
+  content: "";
+  background-image: url("https://via.placeholder.com/800x256");
+  position: absolute;
+  display: block;
+  width: 800px;
+  height: 256px;
+}
+
+.feature-main-bridge::before {
+  content: "";
+  background-image: url("https://via.placeholder.com/800x256");
+  position: absolute;
+  display: block;
+  width: 800px;
+  height: 256px;
+
+}
+
+.feature-standart {
+  color: var(--basic-black);
+  background-color: var(--basic-grey);
+}
+
+.feature-standart h3 {
+  color: var(--basic-extra-black);
+}
+
+/*Recommendations*/
+
+.recommendations-list {
+  list-style: none;
+}
+
+.recommendations-list h4 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  color: var(--basic-extra-black);
+}
+
+.recommendation-item {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.recommendation-housing {
+  background-image: url("https://via.placeholder.com/75x72");
+  padding-top: 60px;
+}
+.recommendation-food {
+  background-image: url("https://via.placeholder.com/75x70");
+  padding-top: 60px;
+}
+.recommendation-souvenirs {
+  background-image: url("https://via.placeholder.com/64x77");
+  padding-top: 60px;
+}
+
+/*Search*/
+
+.search {
+  text-align: center;
+  background-color: var(--basic-white);
+}
+
+.search-visual-title {
+  font-size: 30px;
+  line-height: 24px;
+  font-weight: bold;
+  color: var(--basic-extra-black);
+}
+
+.button {
+  font: inherit;
+  text-align: center;
+  color: var(--basic-white);
+  vertical-align: middle;
+  text-transform: uppercase;
+  border: none;
+}
+
+.button-form-show {
+  font-size: 21px;
+  line-height: 26px;
+  background-color: var(--basic-brown);
+}
+
+.button-form-show:hover {
+  background-color: var(--basic-hard-brown);
+}
+.button-form-show:focus {
+  background-color: var(--basic-extra-brown);
+  color: var(--basic-white-soft-alfa);
+}
+
+/*Main footer*/
+
+.main-footer {
+  text-align: center;
+  color: var(--basic-extra-black);
+  background-color: var(--basic-white-alfa);
+}
+
+/*Contacts*/
+
+.footer-contacts a {
+  color: var(--basic-extra-black);
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus {
+  text-decoration: none;
+}
+
+/* Social*/
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button {
+  color: var(--basic-white);
+}
+
+.social-button:hover {
+  background-color: var(--basic-hard-blue);
+}
+
+.social-button:focus {
+  background-color: var(--basic-extra-blue);
+  color: var(--basic-white-soft-alfa);
+}
+
+/* footer-copyright*/
+
+.html-academy-logo {
+  background-color: var(--basic-hard-black);
+}
+
+.html-academy-logo:hover {
+  background-color: var(--basic-blue);
+}
+
+.html-academy-logo:focus {
+  background-color: var(--basic-hard-grey);
+}
