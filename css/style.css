@@ -5,8 +5,8 @@
   font-style: normal;
   font-weight: 400;
   src: local('PT Sans'), local('PTSans-Regular'),
-       url('C:/Users/master/Documents/GitHub/1500115-sedona-29/fonts/ptsans.woff2') format('woff2'), /* Super Modern Browsers */
-       url('C:/Users/master/Documents/GitHub/1500115-sedona-29/fonts/ptsans.woff') format('woff'); /* Modern Browsers */
+       url('../fonts/ptsans.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/ptsans.woff') format('woff'); /* Modern Browsers */
   font-display: swap;
 }
 /* pt-sans-700 - latin_cyrillic */
@@ -15,8 +15,8 @@
   font-style: normal;
   font-weight: 700;
   src: local('PT Sans Bold'), local('PTSans-Bold'),
-       url('C:/Users/master/Documents/GitHub/1500115-sedona-29/fonts/ptsansbold.woff2') format('woff2'), /* Super Modern Browsers */
-       url('C:/Users/master/Documents/GitHub/1500115-sedona-29/fonts/ptsansbold.woff2') format('woff'); /* Modern Browsers */
+       url('../fonts/ptsansbold.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/ptsansbold.woff2') format('woff'); /* Modern Browsers */
   font-display: swap;
 }
 
@@ -34,6 +34,7 @@
   --basic-extra-blue: #5496BD;
   --basic-hard-blue: #669EC0;
   --basic-blue: #81B3D2;
+  --basic-extra-grey: #666666;
   --basic-hard-grey: #BDBBBC;
   --basic-grey: #EEEEEE;
   --basic-lite-grey: #F2F2F2;
@@ -83,11 +84,16 @@ a {
   overflow: hidden;
 }
 
+/*Hotels-page global*/
+
+.hotels-main {
+  line-height: 21px;
+  text-align: left;
+}
+
 /*Main navigation*/
 
 .main-navigation {
-  font-size: 14px;
-  line-height: 26px;
   font-weight: bold;
   color: var(--basic-extra-black);
   background-color: transparent;
@@ -117,6 +123,10 @@ a {
   color: var(--basic-extra-black-alfa);
 }
 
+.active-page a {
+  color: var(--basic-brown);
+}
+
 /* Features */
 
 .features {
@@ -132,6 +142,7 @@ a {
 
 .features-list {
   list-style: none;
+  line-height: 21px;
 }
 
 .feature-item h3 {
@@ -221,6 +232,8 @@ a {
   color: var(--basic-extra-black);
 }
 
+/*Buttons*/
+
 .button {
   font: inherit;
   text-align: center;
@@ -230,18 +243,93 @@ a {
   border: none;
 }
 
-.button-form-show {
+.button-form-show
+/*.button-form-search*/ {
+  font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+}
+
+.button-info,
+.button-reserv {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.button-form-show,
+.button-reserv {
   background-color: var(--basic-brown);
 }
 
-.button-form-show:hover {
+.button-form-show:hover,
+.button-reserv:hover {
   background-color: var(--basic-hard-brown);
 }
-.button-form-show:focus {
+
+.button-form-show:focus,
+.button-reserv:focus {
   background-color: var(--basic-extra-brown);
   color: var(--basic-white-soft-alfa);
+}
+
+.button-info
+/*.button-form-search*/ {
+  background-color: var(--basic-blue);
+}
+
+.button-info:hover
+/*.button-form-search:hover*/ {
+  background-color: var(--basic-hard-blue);
+}
+
+.button-info:focus
+/*.button-form-search:focus*/{
+  background-color: var(--basic-extra-blue);
+  color: var(--basic-white-soft-alfa);
+}
+
+
+/*Parameters-form*/
+
+.parameters-form {
+
+}
+
+/*Search-results*/
+
+.search-results {
+}
+
+.results-list {
+  list-style: none;
+}
+
+.results-item h3 {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.hotel-name {
+  color: var(--basic-extra-black);
+}
+
+.hotel-name:hover {
+  color: var(--basic-blue);
+}
+
+.hotel-name:focus {
+  color: var(--basic-extra-black-alfa);
+}
+
+.rating-list {
+  list-style: none;
+}
+
+.rating-value {
+  color: var(--basic-extra-grey);
+  background-color: var(--basic-lite-grey);
 }
 
 /*Main footer*/
@@ -253,6 +341,11 @@ a {
 }
 
 /*Contacts*/
+
+.footer-contacts {
+font-weight: bold;
+font-size: 21px;
+}
 
 .footer-contacts a {
   color: var(--basic-extra-black);
