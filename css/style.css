@@ -206,15 +206,15 @@ a {
 }
 
 .recommendation-housing {
-  background-image: url("https://via.placeholder.com/75x72");
+  background-image: url("img/icon-housing.svg");
   padding-top: 60px;
 }
 .recommendation-food {
-  background-image: url("https://via.placeholder.com/75x70");
+  background-image: url("img/icon-food.svg");
   padding-top: 60px;
 }
 .recommendation-souvenirs {
-  background-image: url("https://via.placeholder.com/64x77");
+  background-image: url("img/icon-souvenirs.svg");
   padding-top: 60px;
 }
 
@@ -378,15 +378,15 @@ font-size: 21px;
 /* footer-copyright*/
 
 .html-academy-logo {
-  background-color: var(--basic-hard-black);
+  stroke: var(--basic-hard-black);
 }
 
 .html-academy-logo:hover {
-  background-color: var(--basic-blue);
+  stroke: var(--basic-blue);
 }
 
 .html-academy-logo:focus {
-  background-color: var(--basic-hard-grey);
+  stroke: var(--basic-hard-grey);
 }
 
 /*DELETE*/
