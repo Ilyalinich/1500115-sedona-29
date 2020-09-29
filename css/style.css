@@ -175,9 +175,10 @@ a {
 
 .main-banner {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
   width: 1200px;
   height: 509px;
   background-image: url("../img/main-page-banner.jpg");
@@ -295,7 +296,8 @@ a {
   content: "";
   width: 800px;
   height: 256px;
-  background-image: url("https://via.placeholder.com/800x256");
+  background-image: url("../img/feature-city.jpg");
+  background-color: var(--basic-hard-grey);
   background-repeat: no-repeat;
   background-position: center;
   display: inline-block;
@@ -306,7 +308,8 @@ a {
   content: "";
   width: 800px;
   height: 256px;
-  background-image: url("https://via.placeholder.com/800x256");
+  background-image: url("../img/feature-bridge.jpg");
+  background-color: var(--basic-hard-grey);
   background-repeat: no-repeat;
   background-position: center;
   display: inline-block;
@@ -403,6 +406,7 @@ outline-offset: -5px;
 margin: 0;
 padding: 0;
 display: block;
+margin-bottom: -120px;
 }
 /*Buttons*/
 
@@ -540,7 +544,7 @@ display: block;
   background-color: var(--basic-white-alfa);
   outline: 5px solid rgba(255, 0, 0, 0.7);
   outline-offset: -5px;
-  margin-top: -120px;
+  min-height: 120px;
 }
 
 
