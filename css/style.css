@@ -47,6 +47,7 @@
 /*Global*/
 
 body {
+  position: relative;
   min-width: 1280px;
   margin: 0;
   padding: 0;
@@ -120,8 +121,6 @@ a {
 /*Main navigation*/
 
 .main-navigation {
-  display: flex;
-  justify-content: space-around;
   background-color: var(--basic-white);
   outline: 5px solid var(--basic-blue);
   outline-offset: -5px;
@@ -148,8 +147,6 @@ a {
 .site-navigation {
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-start;
-  width: 454px;
   margin: 0;
   padding: 0;
   padding-top: 15px;
@@ -164,6 +161,17 @@ a {
 .site-navigation li {
   margin-bottom: 15px;
   width: 227px;
+}
+
+.site-navigation li:nth-child(odd) {
+  margin-left: 73px;
+}
+.site-navigation li:nth-child(even) {
+  margin-right: 73px;
+}
+.site-navigation li:nth-child(4n),
+.site-navigation li:nth-child(4n-1) {
+  text-align: right;
 }
 
 .site-navigation a {
@@ -403,8 +411,6 @@ a {
 /*Cart*/
 
 .cart {
-outline: 5px solid rgba(255, 0, 0 , 0.3);
-outline-offset: -5px;
 margin: 0;
 padding: 0;
 display: block;
@@ -582,7 +588,7 @@ display: block;
 
 /*Main footer*/
 
-.main-footer {
+.page-footer {
   display: flex;
   justify-content: space-between;
   color: var(--basic-extra-black);
@@ -594,7 +600,12 @@ display: block;
   box-sizing: border-box;
 }
 
-
+.main-footer {
+  position: absolute;
+  left: 50%;
+  margin-left: -600px;
+  bottom: 0;
+}
 
 /*Contacts*/
 
