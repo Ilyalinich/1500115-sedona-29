@@ -24,22 +24,20 @@
 
     <main class="main-container width-container">
       <section class="main-banner">
-        <h1 class="visually-hidden">Городок Седона</h1>
-          <div class="banner-text"></div>
+        <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
       </section>
 
       <section class="features">
         <div class="features-title">
           <h2 class="visually-hidden">Преимущества</h2>
-          <p class="features-visual-title">Седона ‒ небольшой городок в Аризоне,<br>
-            заслуживающий большего!</p>
-          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</p>
+          <p>Седона &hairsp;&ndash;&hairsp; небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </div>
         <ul class="features-list">
           <li class="feature-item-1">
             <div class="feature-item feature-main-city">
               <h3>Настоящий городок</h3>
-              <p>— №1 —</p>
+              <p>&ndash;&emsp13;№1&emsp13;&ndash;</p>
               <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
             </div>
             <ul class="recommendations-list">
@@ -60,23 +58,23 @@
           <li class="feature-item-2">
             <div class="feature-item feature-main-bridge">
               <h3>Там есть мост дьявола</h3>
-              <p>— №2 —</p>
+              <p>&ndash;&emsp13;№2&emsp13;&ndash;</p>
               <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
           </li>
           <li class="feature-item feature-standart">
             <h3>Небольшая площадь</h3>
-            <p>— №3 —</p>
+            <p>&ndash;&emsp13;№3&emsp13;&ndash;</p>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
           <li class="feature-item feature-standart">
             <h3>Красивая дорога</h3>
-            <p>— №4 —</p>
+            <p>&ndash;&emsp13;№4&emsp13;&ndash;</p>
             <p>Ехать в седону из лас-вегаса совсем не скучно!</p>
           </li>
           <li class="feature-item feature-standart">
             <h3>Мало туристов</h3>
-            <p>— №5 —</p>
+            <p>&ndash;&emsp13;№5&emsp13;&ndash;</p>
             <p>Большинство едет в гранд каньон и толпится там</p>
           </li>
         </ul>
@@ -84,20 +82,20 @@
 
       <section class="search">
         <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-        <p class="search-visual-title">Заинтересовались?</p>
-        <p>Укажите предполагаемые даты поездки,<br>
+        <p>Заинтересовались?</p>
+        <p>Укажите предполагаемые даты поездки,
           и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
         <button class="button button-form-show" type="button">Поиск гостиницы в седоне</button>
         <section class="modal width-container">
-          <h2 class="visually-hidden">Форма поиска гостиницы в Седоне</h2>
+          <h3 class="visually-hidden">Форма поиска гостиницы в Седоне</h3>
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
             <p>
               <label for="date-in">дата заезда:</label>
-              <input type="date" name="date-in" id="date-in" value="">
+              <input type="text" name="date-in" id="date-in" value="24 Апреля 2017">
             </p>
             <p>
               <label for="date-out">дата выезда:</label>
-              <input type="date" name="date-out" id="date-out" value="">
+              <input type="text" name="date-out" id="date-out" value="4 Июля 2017">
             </p>
             <p>
               <label for="adults">взрослые:</label>
@@ -109,16 +107,18 @@
           </form>
         </section>
       </section>
-
-      <img class="cart" src="img/map.jpg" width="1199" height="594" alt="Карта с результатами поиска гостиницы в Седоне">
-
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d593028.8584989486!2d-111.61782899544002!3d34.80461957676267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1602245371773!5m2!1sru!2sru"
+          width="1200" height="594" allowfullscreen="" aria-hidden="false" tabindex="0" title="Карта с результатами поиска гостиницы в Седоне">
+        </iframe>
+      </div>
     </main>
 
     <footer class="page-footer main-footer width-container">
       <section class="footer-contacts">
         <h2 class="visually-hidden">Контактная информация</h2>
         <p>#visitsedona</p>
-        <p>тел: <a class="footer-phone" href="tel:+74956660166">+7(495) 666-01-66</a></p><!--Уточнить нужна ли ссылка-->
+        <p>тел: <a class="footer-phone" href="tel:+74956660166">+7(495) 666-01-66</a></p>
       </section>
 
       <section class="footer-social">
