@@ -264,17 +264,13 @@ a {
 .feature-item {
   box-sizing: border-box; /*!!!!!!!!!!!!!!!*/
   min-height: 256px; /*!!!!!!!!!!!!!!!*/
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
   width: 400px;
-  padding: 47px 48px 54px 48px;
+  padding: 47px 48px 25px 48px;
 }
 
 .feature-item p {
   margin: 0;
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
 .feature-item p:last-child {
@@ -356,7 +352,7 @@ a {
   min-height: 330px; /*!!!!!!!!!!!!!!!*/
   color: var(--basic-black);
   background-color: var(--basic-white);
-  padding: 160px 50px 82px 50px;
+  padding: 160px 50px 25px 50px;
   width: 400px;
 }
 
@@ -644,6 +640,7 @@ display: block;
   box-sizing: border-box;
   border-radius: 2px;
   width: 317px;
+  padding: 5px 0px;
 }
 
 .min-price {
@@ -653,20 +650,22 @@ display: block;
 .price-controls input {
   display: inline-block;
   vertical-align: middle;
-  width: 50px;
+  width: 150px;
   font-family: inherit;
   font-size: inherit;
+  text-transform: inherit;
+  text-align: center;
   color: inherit;
   background-color: transparent;
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 .price-controls label {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5px 0px;
   min-width: 157px;
   height: 22px;
 }
