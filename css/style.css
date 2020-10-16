@@ -801,11 +801,14 @@ display: block;
 .sort-parameters-button:active {
   color: var(--basic-extra-black);
   border-bottom: none;
+  padding-bottom: 1px;
 }
+
 
 .sort-parameters .current {
   color: var(--basic-blue);
   border-bottom: none;
+  padding-bottom: 1px;
 }
 
 .sort-direction {
